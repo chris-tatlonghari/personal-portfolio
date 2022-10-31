@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Chris Tat • Portfolio v1.8 </title>
+    <title> Chris Tat • Portfolio </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="icon" href="images//fire.svg">
@@ -16,7 +16,8 @@
 
     <!-- Navbar -->
 
-    <nav class="navbar navbar-expand-md navbar-dark py-4" style="background-color: #712cf9;">
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top py-3" style="background-color: #712cf9;
+    font-family: Arial, Helvetica, sans-serif; font-size: medium;">
         <div class="container-fluid">
             <!-- <a class="navbar-brand me-5 ms-2" href="#">
                 <img src="images/crown.svg" alt="Crown" width="30" height="24" class="me-3">Chris Tatlonghari
@@ -26,41 +27,51 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto">
                     <li class="nav-item px-1">
                         <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item px-1">
-                        <a class="nav-link" href="#about_me">About me</a>
+                        <a class="nav-link active" href="#about_me">About me</a>
                     </li>
                     <li class="nav-item px-1">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                        <a class="nav-link active" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item px-1">
-                        <a class="nav-link" href="#experience">Experience</a>
+                        <a class="nav-link active" href="#experience">Experience</a>
                     </li>
                     <li class="nav-item px-1">
-                        <a class="nav-link" href="#facts">Fun Facts</a>
+                        <a class="nav-link active" href="#facts">Fun Facts</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav sm-icons ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="https://github.com/chris-tatlonghari"><i
-                                class="fa-brands fa-github"></i></a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://twitter.com/kidtat_"><i
-                                class="fa-brands fa-twitter"></i></a></li>
-                    <li class="nav-item"><a class="nav-link"
-                            href="https://www.linkedin.com/in/christopher-tatlonghari-7b43b515a/"><i
-                                class="fa-brands fa-linkedin"></i></a></li>
+
+                    <li class="nav-item"><a class="nav-link active" href="https://github.com/chris-tatlonghari">
+                            <i class="fa-brands fa-github"></i>
+                            <span class="d-md-none ps-1">Github</span>
+                        </a></li>
+
+                    <li class="nav-item"><a class="nav-link active" href="https://twitter.com/kidtat_">
+                            <i class="fa-brands fa-twitter"></i>
+                            <span class="d-md-none ps-1">Twitter</span>
+                        </a></li>
+
+                    <li class="nav-item"><a class="nav-link active"
+                            href="https://www.linkedin.com/in/christopher-tatlonghari-7b43b515a/">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <span class="d-md-none ps-1">LinkedIn</span>
+                        </a></li>
+
                 </ul>
 
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <div class="vr"></div>
+                <ul class="navbar-nav">
+                    <li class="nav-item d-none d-md-block">
+                        <a class="nav-link active" href="#">
+                            <div class="vr" style="color: white;"></div>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#version">v1.8</a>
+                    <li class="nav-item d-none d-md-block">
+                        <a class="nav-link active" href="#version">v1.9</a>
                     </li>
                 </ul>
 
@@ -72,33 +83,58 @@
 
     <!-- Home -->
 
-    <div class="div pt-5" style="background: radial-gradient(ellipse at top, #add8e6, transparent),
-    radial-gradient(ellipse at bottom, #bdaded, transparent);">
-        <div class="col-10 mx-auto pt-5">
+    <div class="div pt-1"
+        style="background: linear-gradient(to left bottom, #f2f8c9, #ffe9bf, #ffdac3, #ffced2, #fec8e4, #edc9ef, #d8cbf6, #c1cef8, #b6d2f6, #afd6f2, #acd8ed, #addae6);">
+        <div class="col-10 mx-auto pt-3" id="home">
 
             <div>
                 <hr>
                 </hr>
             </div>
 
-            <h1 class="pt-5" style="color: #712cf9; text-align: center; font-size: 75px;" id="home">Hi, I'm Chris 👋🏽
+            <h1 class="pt-5" style="color: black; text-align: center; font-size: 75px;">Hi, I'm Chris 👋🏽
             </h1>
             <div class="row justify-content-center pt-2 pb-2">
                 <div class="col-8" style="color: gray; text-align: center; font-size: medium; font-style: italic;">
                     Full stack developer / Freelancer </div>
             </div>
-            <div class="row justify-content-center pt-2 pb-5">
-                <div class="col-8" style="color: #712cf9; text-align: center; font-size: larger;">Welcome to my personal
+            <div class="row justify-content-center pt-2 pb-3">
+                <div class="col-8" style="color: black; text-align: center; font-size: larger;">Welcome to my personal
                     website. Here you can gain
-                    insight into who I am, projects I've worked on / am
-                    working on, my work experience, interests, and more.</div>
+                    insight into who I am, projects I've worked on, my work experience, interests, and more.</div>
             </div>
 
-            <div class="pb-5">
-                <hr>
-                </hr>
+
+        </div>
+
+        <div class="col-12 mx-auto pt-2 pb-3">
+            <div class="row justify-content-center">
+
+                <a type="button" class="btn btn-light col-md-3 d-none d-md-block me-4" href="https://github.com/chris-tatlonghari/personal-portfolio" style="color: #000000; background-color: #e3e5e6; border-color: #e3e5e6;
+                    font-family: Arial, Helvetica, sans-serif; font-weight: lighter; font-size: medium;">
+                    <i class="fa-brands fa-github-alt px-1" style="color: gray"></i>
+                    git repository
+                    <i class="fa fa-laptop-code ps-4" style="color: gray"></i></i></a>
+
+                <a type="button" class="btn btn-primary col-md-2 d-none d-md-block px-1" href="#contact_me" style="color: #ffffff; background-color: #712cf9; border-color: #712cf9;
+                    font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: medium;">Contact Me <i
+                        class="fa fa-inbox ps-1"></i></a>
             </div>
         </div>
+
+        <div class="row justify-content-center pb-2">
+            <div class="col-8"
+                style="color: gray; text-align: center; font-size: small; font-family: Arial, Helvetica, sans-serif;">
+                Personal Website <span class="me-1"
+                    style="font-weight: bold; color: #000000; font-style: italic;">v1.9</span> · <span
+                    class="mx-1">Fast</span> · <span class="mx-1">Responsive</span> </div>
+        </div>
+
+        <div class="pb-5 col-10 mx-auto">
+            <hr>
+            </hr>
+        </div>
+
     </div>
 
     <!-- About Me -->
@@ -273,7 +309,8 @@
                                                         aria-hidden="true"></i></div>
                                                 <div class="timeline-text">
                                                     <h6>First Internship</h6>
-                                                    <p>After interviewing at several companies in Cincinnati, I secured my first internship at Fox Sports.</p>
+                                                    <p>After interviewing at several companies in Cincinnati, I secured
+                                                        my first internship at Fox Sports.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -285,7 +322,8 @@
                                                         aria-hidden="true"></i></div>
                                                 <div class="timeline-text">
                                                     <h6>Learning curve</h6>
-                                                    <p>I am introduced at Fox to a whole new world of technologies: .NET, SQL, Entity Framework, etc.</p>
+                                                    <p>I am introduced at Fox to a whole new world of technologies:
+                                                        .NET, SQL, Entity Framework, etc.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -308,7 +346,8 @@
                                                         aria-hidden="true"></i></div>
                                                 <div class="timeline-text">
                                                     <h6>Super Bowl LIV</h6>
-                                                    <p>Contributed towards a very successful Super Bowl LIV experience.</p>
+                                                    <p>Contributed towards a very successful Super Bowl LIV experience.
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -320,7 +359,8 @@
                                                         aria-hidden="true"></i></div>
                                                 <div class="timeline-text">
                                                     <h6>Fox Sports Digital Revamp</h6>
-                                                    <p>Worked with team to build a re-imagined Fox Sports website and mobile app.</p>
+                                                    <p>Worked with team to build a re-imagined Fox Sports website and
+                                                        mobile app.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -343,7 +383,8 @@
                                                         aria-hidden="true"></i></div>
                                                 <div class="timeline-text">
                                                     <h6>Graduation</h6>
-                                                    <p>Graduated at the top of my class at the University of Cincinnati with a 4.0 GPA.</p>
+                                                    <p>Graduated at the top of my class at the University of Cincinnati
+                                                        with a 4.0 GPA.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -355,7 +396,8 @@
                                                         aria-hidden="true"></i></div>
                                                 <div class="timeline-text">
                                                     <h6>Software Engineer</h6>
-                                                    <p>I am hired full time as an Associate Software Engineer at Fox Sports.</p>
+                                                    <p>I am hired full time as an Associate Software Engineer at Fox
+                                                        Sports.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -367,7 +409,8 @@
                                                         aria-hidden="true"></i></div>
                                                 <div class="timeline-text">
                                                     <h6>Currently..</h6>
-                                                    <p>at Fox, we are gearing up for the season of champions: MLB World Series, Fifa World Cup, and Super Bowl.</p>
+                                                    <p>at Fox, we are gearing up for the season of champions: MLB World
+                                                        Series, Fifa World Cup, and Super Bowl.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -426,8 +469,13 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+
+            <div class="alert alert-warning mt-5" role="alert">
+                <i class="fa fa-circle-info pe-3" id="contact_me"></i> Contact me functionality coming in version 2.0!
+            </div>
         </div>
     </div>
+
 
 
     <!-- Footer -->
