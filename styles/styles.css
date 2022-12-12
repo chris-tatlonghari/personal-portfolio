@@ -3,5 +3,22 @@
     --white: #ffffff;
     --light: #99aab5;
     --dark: #2c2f33;
-    --black: #23272a;
+    --black: #000000;
+  }
+
+  body {
+    font-family:  Arial, Helvetica, sans-serif;
+    max-width: 1400px;
+    margin: auto;
+    color: white;
+    background-color: var(--black);
+  }
+
+  .navbar-round {
+    background-color: var(--black) !important;
+  }
+
+  .nav-item :hover {
+    background-color: var(--main-theme) ;
+    border-radius: 15px;
   }
